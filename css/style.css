@@ -8,14 +8,62 @@
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: aqua;
-  border: black;
+  border:10px dashed black;
+  position: static;
 }
 
-header menu {
+.right {
   display: flex;
-  display: inline;
+  position: relative;
+  padding: 15px 30px;
+  font-size: 16px;
+  text-align: center;
+
 }
+#About_me, #Projects, #Contact {
+  box-shadow: inset;
+  background: #119ffd;
+  border-radius: 50px;
+  margin: 10px;
+
+}
+#About_me:hover, #Projects:hover, #Contact:hover {
+  background-color: black;
+}
+ /* 
+.parent{
+  margin: 5px;
+  display: flex;
+  border: 2px solid orange;
+}
+
+.child1, .child2{
+  margin: 5px;
+  
+}
+
+
+.child1{
+  flex: 20%;
+  border-right: 2px solid peru;
+}
+
+
+.child2{
+  flex: 80%;
+
+} */
+a {
+  text-decoration: none;
+  color: red;
+  padding: 10px;
+}
+/* a:hover {
+  color: yellow;
+} */
+
 body {
   margin: 0;
   padding: 0;
