@@ -9,11 +9,30 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: aqua;
-  border:10px dashed black;
+  background: linear-gradient(45deg, #ff0057, #2196f3);
   position: static;
+  padding: 20px;
 }
 
+h1 {
+display: flex;
+background-color: #119ffd;
+}
+
+.hero-banner {
+  display: flex;
+  width: auto;
+  height: 100px;
+  background-image: url(../images/02-hero-bg.jpg);
+  /* How to fit */
+  justify-content: right;
+  padding: 20px;
+  align-items: flex-end;
+}
+
+h4 {
+  background-color: #119ffd;
+}
 .right {
   display: flex;
   position: relative;
@@ -22,20 +41,20 @@ header {
   text-align: center;
 }
 
-#About_me, #Projects, #Contact {
+#About_me, #Projects, #ContactB {
   box-shadow: inset;
   background: #119ffd;
   border-radius: 50px;
   margin: 10px;
 }
 
-#About_me:hover, #Projects:hover, #Contact:hover {
+#About_me:hover, #Projects:hover, #ContactB:hover {
   background-color: black;
 }
 
 a {
   text-decoration: none;
-  color: red;
+  color: white;
   padding: 10px;
 }
 
@@ -56,7 +75,7 @@ a {
 
 .right_about {
   flex: 80%;
-  border-left: 2px solid peru;
+  border-left: 4px solid rgb(23, 116, 255);
 }
 
 .work-section {
@@ -76,7 +95,7 @@ a {
 
 .right_work{
   flex: 80%;
-  border-left: 2px solid peru;
+  border-left: 4px solid rgb(23, 116, 255);
   margin: 5px;
   display: grid;
   border: 2px left orange;
@@ -89,7 +108,12 @@ a {
 .big-box{
   width: auto;
   height: 200px;
-  border: 3px solid rgb(173, 226, 173);
+  padding: 0%;
+  border: 3px solid aqua;
+  display: flex ;
+  justify-content: left;
+  align-items: center;
+  background-image: url(../images/YouTube.jpg);
 }
 
 .splitbox1 {
@@ -100,25 +124,40 @@ a {
 }
 
 .split1left, .split1right{
+  padding: 0px;
   margin: 0px;
 }
 
 .split1left {
   margin-right: 5px;
   flex: 50%;
-  border: 2px solid #3dc95b;
+  border: 2px solid aqua;
   width: auto;
   height: auto;
+  display: flex ;
+  justify-content: left;
+  align-items: center;
+  background-image: url(../images/Netflix.jpg);
 }
 
 .split1right {
   margin-left: 5px;
   flex: 50%;
-  border: 2px solid #3dc95b;
+  border: 2px solid aqua;
   width: auto;
   height: auto;
+  display: flex ;
+  justify-content: left;
+  align-items: center;
+  background-image: url(../images/LinkedIn.png);
 }
-
+.worktag {
+  font-size: small;
+  display: flex;
+  background-color: aqua;
+  width: fit-content;
+  color: white;
+}
 .splitbox2 {
   width: auto;
   height: 100px;
@@ -127,29 +166,44 @@ a {
 }
 
 .split2left, .split2right{
+  padding: 0px;
   margin: 0px;
 }
 
 .split2left {
   margin-right: 5px;
   flex: 50%;
-  border: 2px solid #3dc95b;
+  border: 2px solid aqua;
   width: auto;
   height: auto;
+  display: flex ;
+  justify-content: left;
+  align-items: center;
+  background-image: url(../images/Google.png);
 }
 
 .split2right {
   margin-left: 5px;
   flex: 50%;
-  border: 2px solid #3dc95b;
+  border: 2px solid aqua;
   width: auto;
   height: auto;
+  display: flex ;
+  justify-content: left;
+  align-items: center;
+  background-image: url(../images/Facebook.jpg); 
+}
+
+#YouTube:hover, #Netflix:hover, #LinkedIn:hover, #Google:hover, #Facebook:hover {
+  box-shadow: inset;
+  background-color: black;
+  background-image: black;
+  /* How to fix Hover */
 }
 
 .contact-section {
   margin: 5px;
   display: flex;
-  border: 2px solid orange;
 }
 
 .left_contact, .right_contact{
@@ -164,9 +218,11 @@ a {
 
 .right_contact{
   flex: 80%;
-  border-left: 2px solid peru;
+  border-left: 4px solid rgb(23, 116, 255);
 }
-
+#contactlinked {
+  color: blue;
+}
 
 
 
