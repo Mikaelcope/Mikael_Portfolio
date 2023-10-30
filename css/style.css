@@ -20,19 +20,164 @@ header {
   padding: 15px 30px;
   font-size: 16px;
   text-align: center;
-
 }
+
 #About_me, #Projects, #Contact {
   box-shadow: inset;
   background: #119ffd;
   border-radius: 50px;
   margin: 10px;
-
 }
+
 #About_me:hover, #Projects:hover, #Contact:hover {
   background-color: black;
 }
- /* 
+
+a {
+  text-decoration: none;
+  color: red;
+  padding: 10px;
+}
+
+.about-section {
+  margin: 5px;
+  display: flex;
+}
+
+.left_about, .right_about {
+  margin: 5px;
+}
+
+.left_about {
+  display: flex;
+  justify-content: center;
+  flex: 20%;
+}
+
+.right_about {
+  flex: 80%;
+  border-left: 2px solid peru;
+}
+
+.work-section {
+  margin: 5px;
+  display: flex;
+}
+
+.left_work, .right_work{
+  margin: 5px;
+}
+
+.left_work{
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.right_work{
+  flex: 80%;
+  border-left: 2px solid peru;
+  margin: 5px;
+  display: grid;
+  border: 2px left orange;
+}
+
+.big-box, .splitbox1, .splitbox2 {
+  margin: 5px;
+}
+
+.big-box{
+  width: auto;
+  height: 200px;
+  border: 3px solid rgb(173, 226, 173);
+}
+
+.splitbox1 {
+  width: auto;
+  height: 100px;
+  display: flex;
+  margin: 5px;
+}
+
+.split1left, .split1right{
+  margin: 0px;
+}
+
+.split1left {
+  margin-right: 5px;
+  flex: 50%;
+  border: 2px solid #3dc95b;
+  width: auto;
+  height: auto;
+}
+
+.split1right {
+  margin-left: 5px;
+  flex: 50%;
+  border: 2px solid #3dc95b;
+  width: auto;
+  height: auto;
+}
+
+.splitbox2 {
+  width: auto;
+  height: 100px;
+  display: flex;
+  margin: 5px;
+}
+
+.split2left, .split2right{
+  margin: 0px;
+}
+
+.split2left {
+  margin-right: 5px;
+  flex: 50%;
+  border: 2px solid #3dc95b;
+  width: auto;
+  height: auto;
+}
+
+.split2right {
+  margin-left: 5px;
+  flex: 50%;
+  border: 2px solid #3dc95b;
+  width: auto;
+  height: auto;
+}
+
+.contact-section {
+  margin: 5px;
+  display: flex;
+  border: 2px solid orange;
+}
+
+.left_contact, .right_contact{
+  margin: 5px;
+}
+
+.left_contact{
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.right_contact{
+  flex: 80%;
+  border-left: 2px solid peru;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .parent{
   margin: 5px;
   display: flex;
@@ -47,19 +192,15 @@ header {
 
 .child1{
   flex: 20%;
-  border-right: 2px solid peru;
 }
 
 
 .child2{
   flex: 80%;
+  border-left: 2px solid peru;
 
-} */
-a {
-  text-decoration: none;
-  color: red;
-  padding: 10px;
 }
+
 /* a:hover {
   color: yellow;
 } */
@@ -67,7 +208,6 @@ a {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
 
