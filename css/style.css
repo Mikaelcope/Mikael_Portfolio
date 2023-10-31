@@ -17,12 +17,13 @@ background-color: #119ffd;
 }
 
 .Self-image {
-  height: 95px;
-  width: 70px;
+  height: 150px;
+  width: 173px;
   display: flex;
   background-image: url(../images/Image\ Self.jpg);
   justify-content: center;
   border: 2px solid #119ffd;
+  background-size: contain;
 }
 
 .hero-banner {
@@ -30,10 +31,10 @@ background-color: #119ffd;
   width: auto;
   height: 100px;
   background-image: url(../images/02-hero-bg.jpg);
-  /* How to fit */
   justify-content: right;
   padding: 20px;
   align-items: flex-end;
+  background-size: contain;
 }
 
 h4 {
@@ -152,6 +153,7 @@ a {
   justify-content: left;
   align-items: center;
   background-image: url(../images/Netflix.jpg);
+  background-size: contain;
 }
 
 .split1right {
@@ -164,6 +166,7 @@ a {
   justify-content: left;
   align-items: center;
   background-image: url(../images/LinkedIn.png);
+  background-size: contain;
 }
 .worktag {
   font-size: small;
@@ -194,6 +197,7 @@ a {
   justify-content: left;
   align-items: center;
   background-image: url(../images/Google.png);
+  background-size: contain;
 }
 
 .split2right {
@@ -206,13 +210,12 @@ a {
   justify-content: left;
   align-items: center;
   background-image: url(../images/Facebook.jpg); 
+  background-size: contain;
 }
 
 #YouTube:hover, #Netflix:hover, #LinkedIn:hover, #Google:hover, #Facebook:hover {
   box-shadow: inset;
-  background-color: black;
-  background-image: black;
-  /* How to fix Hover */
+  transition: 0.2s;
 }
 
 .contact-section {
@@ -249,6 +252,9 @@ a {
 @media screen and (max-width: 768px) {
   main,
   nav {
+    flex-direction: column;
+  }
+  .splitbox1, .splitbox2 {
     flex-direction: column;
   }
   main {
